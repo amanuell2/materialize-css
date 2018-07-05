@@ -9,50 +9,43 @@
     <script src="./assets/js/materialize.js"></script>
 </head>
 <div class="container">
-    <h2>card</h2>
-    <div class="row">
-        <div class="col s12 l6">
-            <div class="card">
-                <div class="card-image">
-                    <img src="./assets/img/sample-1.jpg">
-                    <a href="#" class="btn-floating pulse wave-effect waves-light   halfway-fab">
-                        <i class="mataralize-icon">favorite</i>
-                    </a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title">
-                        Materialize css
-                    </span>
-                    <p>Materialize comes in two different forms. You can select which version you want depending on your preference
-                        and expertise. To start using Materialize, all you have to do is download one of the options below.</p>
-                </div>
-                <div class="card-action center">
-                    <a href="#">Add to meal</a>
-                    <a href="#">Add to meal</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 l6 ">
-            <div class="card ">
-                <div class="card-image ">
-                    <img src="./assets/img/Wallpapers2012.com  -  194_021.jpg">
-                    <span class="card-title ">Card Title</span>
-                </div>
-                <div class="card-content ">
-                    <span class="card-title ">
-                        Materialize css
-                    </span>
-                    <p>Materialize comes in two different forms. You can select which version you want depending on your preference
-                        and expertise. To start using Materialize, all you have to do is download one of the options below.</p>
-                </div>
-                <div class="card-action center ">
-                    <a href="#">Add to meal</a>
-                    <a href="#">Add to meal</a>
-                </div>
-            </div>
+    <h2>Modals</h2>
+    <a href="#term" class="waves-effect waves-light btn orange modal-trigger">Term and Conditions</a>
+    <div class="modal modal-fixed-footer" id="term">
+        <div class="modal-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close btn orange">Agree</a>
+            <a href="#" class="modal-close btn red">Disagree</a>
         </div>
     </div>
+
 </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instance = M.Modal.init(elems);
+    });
+</script>
 
 </html>
